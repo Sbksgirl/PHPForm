@@ -5,7 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500&display=swap" rel="stylesheet">
-	<link rel="stylesheet/less" type="text/css" href="style/template.less" />
+	<link rel="stylesheet/less" type="text/css" href="../style/template.less" />
 	<script defer src="https://use.fontawesome.com/releases/v5.5.0/js/all.js" integrity="sha384-GqVMZRt5Gn7tB9D9q7ONtcp4gtHIUEW/yG7h98J7IpE3kpi+srfFyyB/04OV6pG0" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
@@ -55,8 +55,6 @@
 <body>
 
 	<div id="centerwrap">
-
-				<?php include "../includes/header.inc.html.php"; ?>
 				
 		<script type="text/javascript">
 			var _gaq = _gaq || [];
@@ -89,6 +87,7 @@
     <main>
         <h1>Thank you!</h1>
         <p>Our records show you submitted the following:<br>
+            Your Party: <?php echo htmlspecialchars($myAthleteVolunteer, ENT_QUOTES, 'UTF-8'); ?><br>
             Your Name: <?php echo htmlspecialchars($myName, ENT_QUOTES, 'UTF-8'); ?><br>
             Email: <?php echo htmlspecialchars($myEmail, ENT_QUOTES, 'UTF-8'); ?><br>
             Question: <?php echo htmlspecialchars($myQuestion, ENT_QUOTES, 'UTF-8'); ?><br>
@@ -96,5 +95,7 @@
     </main>
     <?php include '../includes/footer.inc.html.php'; ?>
 </div>
+    
 </body>
+    </div>
 </html>

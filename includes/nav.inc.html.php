@@ -1,6 +1,6 @@
 <nav class="site-nav">
 	
-	<div class="logo"><img src="../pictures/logo.png" alt="Logo"></div>
+	<div class="logo"><img src="pictures/logo.png" alt="Logo"></div>
 			
 			<div id="social-icons">
                 <p>

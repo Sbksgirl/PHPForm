@@ -90,15 +90,15 @@
 				<form method="post" action="index.php" id="inquiryForm" action="form_processor.php">
 					<!--<input type="text" name="honeypot" id="honeypot" value="" alt="if you fill this field out then your email will not be sent" />-->
 					<label for="event">Athlete or Voluteer: </label>
-					<select id="athleteVoluteer" name="athleteVoluteer" form="athletevoluteerform">
+					<select  id="myAthleteVoluteer" name="myAthleteVoluteer" form="athletevoluteerform">
 						<option value="athlete">Athlete</option>
-						<option value="sunday">Volunteer</option>
-					</select>
+						<option value="volunteer">Volunteer</option>
+					</select><br>
 					<label for="myName">Name</label>
 					<input type="text" name="myName" id="myName" placeholder="Your name..">
 					<label for="myEmail">E-mail</label>
 					<input type="text" name="myEmail" id="myEmail" placeholder="Your email address....">
-					<label for="myQuestion">Question</label> <br />
+					<label for="myQuestion">Question</label> <br/>
 					<textarea form="inquiryForm" rows="10" cols="50" name="myQuestion" id="myQuestion"></textarea>
 					<input id="mySubmit" type="submit" value="Submit">
 				</form>

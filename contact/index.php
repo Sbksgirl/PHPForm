@@ -2,12 +2,12 @@
  /* This example shows how to handle a simple contact form.*/
 $msg = '';
 //Don't run this unless we're handling a form submission
-if (isset($_POST['name'])) {
+if (isset($_POST['myName'])) {
     /* Since the form has been submitted, let's capture the submission values so we can display them to the user on the success page */
-    $myName = $_POST['name'];
-    $myEmail = $_POST['email'];
-    $myQuestion = $_POST['questions'];
-	$myAthleteVolunteer = $_POST['athleteVolunteer'];
+    $myAthleteVolunteer = $_POST['myAthleteVolunteer'];
+    $myName = $_POST['myName'];
+    $myEmail = $_POST['myEmail'];
+    $myQuestion = $_POST['myQuestion'];
     date_default_timezone_set('Etc/UTC');
 
     require '../PHPMailer/PHPMailerAutoload.php';
@@ -38,6 +38,7 @@ if (isset($_POST['name'])) {
         $mail->isHTML(true);
         //Build a simple message body
         $mail->Body = <<<EOT
+Party: $myAthleteVolunteer<br>
 Email: $myEmail<br>
 Name: $myName<br>
 Question: $myQuestion

@@ -3,14 +3,14 @@
 // Edit or Replace this try/catch statement to work with the current PHT configuration
     include '../includes/db.inc.php';
 // Modify the If statement so the try only runs if the First Name field has been submitted AND the honeypot field is empty ''
+//
     if (isset($_POST['event'])) {
         $myEvent = $_POST['event'];
         $myAthleteVolunteer = $_POST['athleteVolunteer'];
-		$myFullName = $_POST['name'];
+		$myName = $_POST['name'];
 		$myAge = $_POST['age'];
-        $myEmail = $_POST['myEmail'];
+        $myEmail = $_POST['email'];
 		$myGender= $_POST['gender'];
-		$myLastName = $_POST['lname'];
 		$myContactName = $_POST['contName'];
 		$myContactNumber = $_POST['contNumber'];
 		$myContactAge = $_POST['contAge'];
@@ -36,14 +36,14 @@
 
             $s = $pdo->prepare($sql);
             $s->bindValue(':event', $myEvent);
-            $s->bindValue(':athlete', $myAthleteVolunteer);
+            $s->bindValue(':athleteVoluteer', $myAthleteVolunteer);
             $s->bindValue(':name', $myName );
 			$s->bindValue(':age', $myAge);
 			$s->bindValue(':email', $myEmail);
 			$s->bindValue(':gender', $myGender);
 			$s->bindValue(':contName', $myContactName);
-			$s->bindValue(':contNumber', $myContactName);
-            $s->bindValue(':contAge', $myContactAGe);
+			$s->bindValue(':contNumber', $myContactNumber);
+            $s->bindValue(':contAge', $myContactAge);
             $s->bindValue(':accomodations', $myAccomodations);
             $s->execute();
         }

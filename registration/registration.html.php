@@ -107,7 +107,7 @@
 				<label for="age">Age:</label>
 				<input type="text" name="age" id="age">
 				<label for="myEmail">E-mail:</label>
-				<input type="text" name="myEmail" id="myEmail">
+				<input type="text" name="email" id="email">
 				<label for="gender">Gender:</label>
 				<select id="gender" name="gender" form="gender">
 					<option value="male">Male</option>

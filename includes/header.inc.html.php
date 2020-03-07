@@ -2,10 +2,10 @@
 
         <div class="wrapper">
 			
-		<?php include "../includes/nav.inc.html.php"; ?>
+		<?php include "includes/nav.inc.html.php"; ?>
 	</div>
 	
-	<div id="images">
+	<!--<div id="images">
                 <img name="slide">
-    </div>
+    </div>-->
 			</header>
